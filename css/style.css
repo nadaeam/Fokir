@@ -1,0 +1,591 @@
+/* global sections */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Source Sans 3", sans-serif;
+    color: #333333;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.lineOne {
+    border-bottom: 1px solid red;
+    width: 75px;
+    height: 5px;
+    text-align: center;
+    margin: auto;
+}
+
+.lineTwo {
+    border-bottom: 1px solid red;
+    width: 150px;
+    height: 5px;
+    margin: auto;
+}
+
+.header {
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-weight: 700px;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* -------------------------------------------------------------- */
+/* Home Section  */
+
+.home {
+    background-image: url(../images/Slide.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.home .overflow {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, .8)
+}
+
+.home .overflow .caption {
+    text-align: center;
+    color: white;
+    margin-top:200px;
+}
+
+.home .overflow .caption span {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.home .overflow .caption h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 10px;
+    color: #ff305b;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.home .overflow .caption p {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 26px;
+    margin: 10px;
+}
+
+.navbar {
+    /* background-color: #ff305b; */
+    overflow: auto;
+    padding-top:20px;
+
+}
+
+.navbar .navbar-list {
+    /* background-color: antiquewhite; */
+    float: right;
+    color: white;
+    margin-right: 100px;
+}
+
+.navbar .navbar-name {
+    /* background-color: aqua; */
+    float: left;
+    margin-left: 100px;
+}
+
+.navbar .navbar-list ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.navbar .navbar-list ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .navbar-list ul li a:hover {
+    color: #ff305b;
+}
+
+.navbar .navbar-name {
+    color: #ff305b;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 12px;
+}
+
+
+/* About section */
+/* ------------------------------------------------------- */
+
+.about {
+    height: 100vh;
+}
+
+.section2 {
+    overflow: hidden;
+    /* margin-inline:auto; */
+    margin-top: 8%;
+}
+
+.about .section2 .about-box {
+    float: left;
+    margin-left: 15%;
+    border: #555555 8px solid;
+    border-radius: 5px;
+    position: relative;
+}
+
+.about .section2 .about-box .parent {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.about .section2 .about-box .parent img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.parent .caption {
+    position: absolute;
+    top: 100%;
+    height: 100%;
+    background-color: #ff305b;
+    transition: all 1s;
+    background-color: rgba(128, 128, 128, 0.5);
+    color: grey;
+}
+
+.parent:hover caption {
+    top: 0;
+}
+
+.about .section2 .about-profile {
+    /* background-color: #ff305b; */
+    float: left;
+    margin-left: 5%;
+    width: 40%;
+}
+
+.about .section2 .about-profile .desc-about p {
+    max-width: 650px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: dashed 1px rgb(153, 153, 153);
+    color: #555555;
+    font-size: 18px;
+}
+
+.about .section2 .about-profile .desc-about h1 {
+    border-left: #ff305b solid 4px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 22px;
+    padding-left: 12px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+.about-data {
+    background-color: aquamarine;
+}
+
+.about-data ul li {
+    width: 50%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.about-data ul span {
+    color: #333333;
+    font-weight: 500;
+}
+
+.about .about-profile .button-about .btn1 {
+    background-color: #ff305b;
+    color: #f1f1f1;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 2px;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+/* ------------------------------------------ */
+
+/* Services */
+.services {
+    height: 100vh;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.services .container {
+    background-color: #ff305b;
+    padding-inline: 15px;
+    margin-top: 40px;
+}
+
+.services .container .boxOne {
+    float: left;
+    background-color: #f1f1f1;
+    width: 25%;
+    padding: 40px 15px;
+}
+
+.services .container .boxOne h1 {
+    padding-bottom: 15px;
+    font-size: 24px;
+}
+
+.services .container .boxOne p {
+    max-width: 400px;
+}
+
+.services .container .boxOne:hover {
+    background-color: white;
+}
+
+.container .boxOne .btn2 {
+    color: #ff305b;
+    display: block;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+
+/* protofolio Section */
+/* -------------------------------------------------- */
+.protfolio {
+    background-color: #fff;
+    text-align: center;
+    padding-top: 80px;
+    overflow: hidden;
+}
+
+.protfolio .menu {
+    text-align: center;
+}
+
+.protfolio .menu ul li {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 3px 12px;
+}
+
+.protfolio .gallery .gallery-img img {
+    width: 100%;
+    display: block;
+}
+
+.protfolio .gallery {
+    margin-right: 100px;
+}
+
+.protfolio .gallery .gallery-img {
+    float: right;
+    width: 30%;
+    padding: 30px;
+}
+
+/* -------------small Bar --------------- */
+.smallBar {
+    height: 50vh;
+    background-color: #f1f1f1;
+}
+
+.smallBar .barBox {
+    float: left;
+    background-color: #f1f1f1;
+    width: 25%;
+    text-align: center;
+    margin-top: 80px;
+    color: #555555;
+}
+
+.smallBar .barBox .icon2 {
+    color: #ff305b;
+    display: block;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.smallBar .barBox h1 {
+    font-size: 25px;
+}
+
+.smallBar .barBox p {
+    font-size: 20px;
+}
+
+/* ----------------------- */
+/* -------------------- testimonial ------------------------------ */
+
+.testimonial {
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom: 40px;
+
+}
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+.slideOne {
+    width: 90%;
+    height: 50vh;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.slideOne .slideOneImg img {
+    border-radius: 50%;
+}
+
+.slideOne .slideOneImg {
+    float: left;
+    padding: 20px;
+}
+
+/* Caption text */
+.text {
+    color: #555555;
+    font-size: 15px;
+    float: left;
+    max-width: 700px;
+    text-align: left;
+    padding: 20px;
+}
+
+.text p {
+    font-size: 16px;
+    font-style: italic;
+    margin-block: 20px;
+}
+.rated{
+    margin-right: 360px;
+}
+.btn3{
+    color:#f1c30d;
+}
+
+/* ------------------start of Blog ---------------------------- */
+
+.blog{
+    background-color: #f1f1f1;
+    padding-top: 80px;
+    height:120vh;
+}
+.videoBox{
+    padding-left: 150px;
+}
+.videoBox .videoBox-Child{
+    float: left;
+    width: 30%;
+    padding:2%;
+}
+
+/* -----------------contact us --------------- */
+
+.contactUs{
+    padding-top: 80px;   
+}
+
+.contactForm .formText{
+    width: 70%;
+    margin: auto;
+    /* background-color: #ff305b; */
+    padding: 20px;
+}
+.contactForm .formText .formTextBtn{
+    display:inline-block;
+    width:39.5%;
+    height:34px;
+    font-size: 14px;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 50px;
+    margin-bottom:20px;
+}
+.formTextSub{
+    width:85%;
+    height: 34px;
+    font-size: 14px;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 50px;
+    margin-bottom:20px;
+}
+.textAreaBtn{
+    font-size: 14px;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 50px;
+    margin-bottom:20px;
+    width:85%;
+}
+
+.btn-Send{
+    background-color: #ff305b;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 2px;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 16px;
+    margin-left:50px;  
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* -----------------Footer ----------------------------- */
+.footer{
+    background-color: #333333;
+    color: #fff;
+}
+
+.footerElement{
+    width: 20%;
+    margin: auto;
+    padding-top: 30px;
+}
+.footer .footer-caption p{
+/* background-color:#717171; */
+width: 50%;
+margin: auto;
+padding-block: 10px;
+text-align: center;
+
+}
+.footer .footerElement ul .btn-foot {
+    float: left;
+    width:25%;
+    margin: 0;
+    padding: 0;
+}
+.footer .footer-caption span{
+    color: #ff305b;
+}
